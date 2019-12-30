@@ -16,6 +16,7 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
+          "proxyConfig": "src/proxy.conf.json",
           "options": {
             "outputPath": "dist/UiComponentsLib",
             "index": "src/index.html",

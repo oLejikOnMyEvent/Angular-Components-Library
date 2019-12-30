@@ -1,0 +1,47 @@
+
+<div class="slider-container">
+
+
+
+    <div class="slider-component">
+       
+        <div class="boxes">
+            <div class="firstBox" (mousemove)="mouseMoveLeftOrRight($event); mouseMove($event)" (mousedown)="clickOnBox($event)" (mouseup)="isClicked = false"  #firstBox [ngStyle]="{'left': fullStyle }"></div>
+            <div class="secondBox"  (mousemove)="mouseMoveLeftOrRightTwo($event); mouseMoveTwo($event)" (mousedown)="clickOnBox2($event)"   (mouseup)="isClickedTwo = false;" #secondBox [ngStyle]="{'margin-left': fullStyleRight }"></div>
+        </div>
+      
+        
+        <div class="Line"   #slider > </div>
+            <!-- <div class="color-Line"> </div> -->
+      
+        <div class="values">
+                <span class="value-one">{{start.value}}</span>
+                <span class="vlaue-two">{{end.value}}</span>
+        </div>
+       
+    </div>
+
+
+    <!-- <npn-slider [min]="1" [max]="100" (onChange)="onSliderChange($event)" [step]="5" [showStepIndicator]="true"></npn-slider> -->
+  
+
+
+
+</div>
+
+
+<div>
+
+    <input type="range" min="1" max="100" value="1" class="sliderTest" #inputTest (input)="testMove($event)">
+    <input type="range" min="1" max="100" value="100" class="sliderTest2" (input)="testMove2($event)" style="margin-left: -5px;">
+    <div >
+        <span class="valueTest"> {{valueTest}}</span>
+        <span> {{valueTest2}}</span>
+    </div>
+    <div>
+      
+    </div>
+</div>
+
+
+

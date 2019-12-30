@@ -1,0 +1,164 @@
+.Yandex_autocompliter {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.Search_form {
+  display: grid;
+  grid-template-columns: 450px 60px;
+  gap: 5px;
+
+}
+
+.autocompliter {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  width: 450px;
+  height: 42px;
+  // border-top: none;
+  // border-bottom: none;
+  // border-left: none;
+  // border-right: none;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  padding-left: 1px;
+  border: 1px solid #c0dbee;
+}
+
+.Autocomplite-block{
+  display: grid;
+}
+
+.Autocomplite-background-city {
+    margin-left: 2px;
+  font-size: 18px;
+  color: black;
+  opacity: 0.5;
+  z-index: 9;
+}
+
+.Autocomplite-background-code{
+  font-size: 18px;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: white;
+
+}
+
+.Autocomplite-background-country{
+  // position: absolute;
+  // box-sizing: border-box;
+    // margin-left: 60px;
+  // margin-top: 10.5px;
+  font-size: 18px;
+  color: black;
+  opacity: 0.5;
+  // text-overflow: ellipsis;
+  // flex-wrap: nowrap;
+  white-space: nowrap;
+  flex: 1;
+  overflow: hidden;
+}
+
+.Autocomplite-background{
+  display: flex;
+  margin-top: 10.5px;
+  width: 450px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.autocompliter:focus {
+  border: 1px solid #c0dbee;
+  // margin-left: -1px;
+}
+
+
+.Countries {
+  background-color: white;
+  width: 40%;
+  height: 60px;
+  border: 0.1px solid lightgray;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .15), 0 8px 25px -5px rgba(0, 0, 0, .25);
+  border-bottom: none;
+}
+
+
+.Countries-item{
+  display: flex;
+  // grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.selectedAirport{
+  background-color: lightyellow;
+}
+
+@media (max-width: 1100px) {
+  .Countries {
+    height: 100px;
+  }
+}
+
+.Countries:hover {
+  // background-color: lightyellow;
+  cursor: pointer;
+}
+
+.Filtred_country_name {
+  margin-left: 10px;
+  font-size: x-large;
+}
+
+.Filtred_airport_name {
+  color: lightgray;
+  margin-left: 10px;
+}
+
+.Filtred_airport_code {
+  color: #999;
+    margin-left: auto;
+  margin-right: 5px;
+  margin-top: 11px;
+}
+
+.Filtred_airport_code_block {
+
+  
+}
+
+.Clear_btn {
+  width: 100%;
+  height: 40px;
+}
+
+.Countries-block {
+  z-index: 1;
+  opacity: 0.9;
+}
+
+
+.testText{
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  width: 450px;
+  height: 42px;
+  // border-top: none;
+  // border-bottom: none;
+  // border-left: none;
+  // border-right: none;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: transparent;
+  position: absolute;
+  z-index: 0;
+  padding-left: 1px;
+  border: 1px solid #c0dbee;
+}

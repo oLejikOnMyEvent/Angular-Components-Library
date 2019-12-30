@@ -1,0 +1,51 @@
+$background_nav: #c0dbee;
+
+.btn_Button {
+
+  padding: 10px 15px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  background: 0 0;
+  border: none;
+}
+
+
+.btn_Button:hover {
+  background-color: lightblue;
+}
+
+.Nav_elements {
+  background-color: $background_nav;
+  width: 30vh;
+  height: 30vh;
+  margin-top: 1%;
+  justify-self: center;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+.Elements {
+  display: grid;
+  overflow-y: scroll;
+  height: 95vh;
+}
+
+.btn_Arrow_up {}
+
+.btn_Arrow_down {}
+
+
+li:hover {
+  cursor: pointer;
+ background-color: lightblue;
+}
+
+ul{
+  list-style-type:none;
+}

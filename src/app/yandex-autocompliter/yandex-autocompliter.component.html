@@ -1,0 +1,54 @@
+<div class="Yandex_autocompliter">
+  <div class="Search_form">
+
+    <div class="Autocomplite-block"> 
+      <div class="Autocomplite-background">
+          <span class="Autocomplite-background-city" *ngIf="isShowAutocomplite">{{cityOfAirport}} </span>
+          <span class="Autocomplite-background-country" *ngIf="isShowData"> {{nameOfAirport}}  </span>
+          <div class="Autocomplite-background-code">
+            <span  *ngIf="isShowData"> {{codeOfAirport}} </span>
+          </div>
+         
+      </div>
+  
+      <input type="text" autocomplete="off" class="autocompliter" placeholder="Куда" (input)="ShowCountry($event)"
+        #input (focus)="ShowCountry($event)" (keydown)="onKey($event)"> 
+    </div>
+
+
+
+    <div>
+      <button class="Clear_btn" (click)="clearForm()"> Clear</button>
+    </div>
+  </div>
+
+
+  <div style="margin-top:5px" *ngIf="isShowCountry" class="Countries-block" > 
+    <!-- <ul>
+      <li></li>
+    </ul> -->
+    <div class="Countries" *ngFor="let country of filtredCountries10; let i = index;"
+      (click)="clickOnCountry(country.city, country.name, country.code, country.country, 'input')" (keydown.enter)="clickOnCountry(country.city, country.name, country.code, country.country)" #listOfAirpotrs  [ngClass]="{selectedAirport: selectedIndexAirpotr === i}" (mouseenter)="deleteClass(); whatIsCity(i, $event)">
+      <div class="Countries-item" (keydown)="onKey($event)">
+        <!-- <div> -->
+          <span class="Filtred_country_name">{{country.city }} </span>
+        <!-- </div> -->
+
+  
+        
+
+      <!-- </div> -->
+      <!-- <div class="Filtred_airport_code_block"> -->
+        <span class="Filtred_airport_code">{{country.code}}</span>
+      <!-- </div> -->
+
+    </div>
+    
+        
+    <span class="Filtred_airport_name">{{country.name}} </span>
+  </div>
+
+
+</div>
+
+ <!-- <input type="text" placeholder="wite test text" class="testText" #inputTest (input)="clickOnInput($event)"> -->
